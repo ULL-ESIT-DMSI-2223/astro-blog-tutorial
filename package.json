@@ -3,12 +3,16 @@
   "type": "module",
   "version": "0.0.1",
   "private": true,
+  "config": {
+    "message": "deploy"
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "deploy": "git ci -am '${npm_package_config_message}' && git push"
   },
   "dependencies": {
     "astro": "^1.6.8"
