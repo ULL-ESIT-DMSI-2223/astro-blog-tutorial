@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "private": true,
   "config": {
-    "message": "deploy"
+    "message": "deploy now"
   },
   "scripts": {
     "dev": "astro dev",
@@ -12,7 +12,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "deploy": "git ci -am ${npm_package_config_message} && git push"
+    "deploy": "git ci -am \"${npm_package_config_message}\" && git push"
   },
   "dependencies": {
     "astro": "^1.6.8"
